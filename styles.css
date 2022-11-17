@@ -1,29 +1,186 @@
 /**      - - - - - - Global Styles - - - - - -     */
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 Body {
+    margin: auto;
+    background-color: rgba(122, 191, 191, .5);
+}
+
+main {
+    
+}
+
+h1, h2, h3, h4, ul li a{
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
 
 }
 
-H1 {
+h2 {
 
 }
 
+h3 {
+
+}
+
+h4 {
+
+}
+
+p, li, dd, dt {
+    font-family: 'Montserrat', sans-serif;
+}
+
+dt {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
 
 /**      - - - - - - Header Styles - - - - - -     */
-
 Header nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    background-color: #ffffff;
+    border-bottom: darkgray;
+}
 
+header nav img{
+    max-width: 100px;
 }
 
 
-/**      - - - - - - Main Styles - - - - - -     */
+
+
+/**      - - - - - - ARTICLE (Street Tacos) Styles - - - - - -     */
+
+article {
+    background-color: #F2F2F2;
+}
+
+article img {
+    width: 100%;
+    max-width: 600px;
+}
+
+#intro {
+    position: relative;
+    top: 130px;
+    margin-bottom: 130px;
+}
+
+/**      - - - - - - ARTICLE (details) Styles - - - - - -     */
+
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+
+
+
+/**      - - - - - - Aside (Side Dishes) Styles - - - - - -     */
+aside {
+    background-color: #7ABFBF;
+}
+
+
 
 
 
 
 
 /**      - - - - - - Footer Styles - - - - - -     */
+footer {
+    background-color: #ffffff;
+}
+
+footer img {
+    max-width: 15%;
+}
+
+
+
+
+
+
+/**      - - - - - - Responsive Styles (Medium) - - - - - -     */
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    /** header */
+    
+
+
+    /** article */
+    #intro {
+        display: flex;
+    }
+
+    /** article: details */
+        #details {
+            background-color: red;
+    }
+    
+
+
+    /** aside */
+    
+
+
+    /** footer */
+    
+
+}
+
+
+
+
+
+
+/**      - - - - - - Responsive Styles (Large) - - - - - -     */
+
+@media screen and (min-width: 1000px) {
+    /** header */
+    
+
+
+    /** article */
+    #intro {
+        display: flex;
+    }
+
+    /** article: details */
+    #details {
+        background-color: black;
+        color: #7ABFBF;
+        text-align: center;
+        padding: 1px 0 5px 0;
+    }
+    
+
+
+    /** aside */
+    
+
+
+    /** footer */
+    
+}
