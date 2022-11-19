@@ -1,36 +1,17 @@
-/**      - - - - - - Global Styles - - - - - -     */
-
+/** >>>>>>>>>>>>> - - - - - - Global Styles - - - - - - <<<<<<<<<<<<<<<< */
 * {
     box-sizing: border-box; 
+    margin: auto;
 }
 
 Body {
-    margin: auto;
     background-color: rgba(122, 191, 191, .5);
+    max-width: 1400px;
 }
 
-main {
-    
-}
-
-h1, h2, h3, h4, ul li a{
+h1, h2, h3, h4, h5, nav, a, small{
     font-family: 'Bebas Neue', cursive;
-}
-
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
+    text-align: center;
 }
 
 p, li, dd, dt {
@@ -49,24 +30,47 @@ li {
     list-style: none;
 }
 
-/**      - - - - - - Header Styles - - - - - -     */
-Header nav {
-    position: absolute;
-    top: 0;
-    display: flex;
-    background-color: #ffffff;
-    border-bottom: darkgray;
+main, footer {
+    position: relative;
+    top: 100px;
 }
 
-header nav img{
+
+
+/** >>>>>>>>>>>>> - - - - - - Header Styles - - - - - - <<<<<<<<<<<<<<<< */
+Header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+
+}
+
+Header nav img{
     max-width: 100px;
 }
 
+#home-logo {
+    position: fixed;
+    top: 0px;
+    left: 300px;
+    background-color: fuchsia;
+}
+
+#sign-in {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: fuchsia;
+}
+
+#search label, #search input, #search button{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
 
 
-
-/**      - - - - - - ARTICLE (Street Tacos) Styles - - - - - -     */
-
+/**  >>>>>>>>>>>>> - - - - - - Street Tacos (#intro) Styles - - - - - - <<<<<<<<<<<<<<<< */
 article {
     background-color: #F2F2F2;
 }
@@ -76,20 +80,20 @@ article img {
     max-width: 600px;
 }
 
-#intro {
-    position: relative;
-    top: 130px;
-    margin-bottom: 130px;
+menu {
+    display: flex;
 }
 
-/**      - - - - - - ARTICLE (details) Styles - - - - - -     */
-
+#tacos {
+    padding-top: 200px;
 }
 
+
+
+
+/** >>>>>>>>>>>>>>> - - - - - - ARTICLE (details) Styles - - - - - - <<<<<<<<<<<<<<<< */
 dl {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+   
 }
 
 
@@ -97,7 +101,7 @@ dl {
 
 
 
-/**      - - - - - - Aside (Side Dishes) Styles - - - - - -     */
+/** >>>>>>>>>>>>>>> - - - - - - ASIDE (Side Dishes) Styles - - - - - - <<<<<<<<<<<<<<<< */
 aside {
     background-color: #7ABFBF;
 }
@@ -106,9 +110,7 @@ aside {
 
 
 
-
-
-/**      - - - - - - Footer Styles - - - - - -     */
+/** >>>>>>>>>>>>>>> - - - - - - Footer Styles - - - - - - <<<<<<<<<<<<<<<< */
 footer {
     background-color: #ffffff;
 }
@@ -117,57 +119,208 @@ footer img {
     max-width: 15%;
 }
 
+small {
+    display: block;
+}
 
 
+/** >>>>>>>>>>>>> - - - - Hamburger Menu Styles - - - - - <<<<<<<<<<<<<<<< */
+#mainnav {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
 
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    position: fixed;
+    top: 0px;
+    left: 10px;
+}
 
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
 
-/**      - - - - - - Responsive Styles (Medium) - - - - - -     */
+label span:before, label span:after {
+    background: transparent;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
 
-@media screen and (min-width: 600px) and (max-width: 999px) {
-    /** header */
-    
+label span:before {
+    top: 5px;
+}
 
+label span:after {
+    top: -5px;
+}
 
-    /** article */
-    #intro {
-        display: flex;
-    }
+#hamburger {
+    display: none;
+}
 
-    /** article: details */
-        #details {
-            background-color: red;
-    }
-    
+input:checked ~ #mainnav {
+    max-height: 500px; 
+}
 
+input:checked ~ label span {
+    background: transparent;
+}
 
-    /** aside */
-    
+input:checked ~ label span:before {
+    /** transform: rotate(-45deg); */
+}
 
+input:checked ~ label span:after {
+    /** transform: rotate(45deg); */
+}
 
-    /** footer */
-    
-
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
 }
 
 
 
+/**  >>>>>>>>>>>>> - - - - - - Responsive Styles (Medium) - - - - - - <<<<<<<<<<<<<<<< */
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    
+    /** Header - - - - - - - - - - - - - - - - - - - - - - */
+    
+    #mainnav {
+        display: flex;
+    }
+
+    #mainnav li a{
+        display: flex;
+        flex-direction: column;
+    }
 
 
 
-/**      - - - - - - Responsive Styles (Large) - - - - - -     */
+    /** Article - - - - - - - - - - - - - - - - - - - - - - */
+
+    #intro img {
+        max-width: 100%;
+    }
+
+
+
+    /** Article: details - - - - - - - - - - - - - - - - - */
+        #details {
+            background-color: red;
+    }
+
+
+    /** Aside - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+    /** Footer - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+/**  >>>>>>>>>>>>> - - - - Responsive Styles (Large) - - - - - <<<<<<<<<<<<<<<< */
 
 @media screen and (min-width: 1000px) {
-    /** header */
     
+    /** Header - - - - - - - - - - - - - - - - - - - - - -*/
+    
+    #mainnav {
+        display: flex;
+    }
+
+    #mainnav li a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap
+    }
+
+    #mainnav li a h5{
+       position: relative;
+       top: 100px;
+       color: red;
+    }
+
+    /** experimental nav styles */
+
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: repeat(7) 1fr;
+        padding: 0;
+    }
+
+    li {
+        position: relative;
+        /*  left: -100px;
+        top: -260px; */
+    }
+
+    label span, input {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        top: 0px;
+        left: 0;
+    }
+
+    /* logo */ # {
+        position: relative;
+        left: 37px;
+        top: 0;
+    }
+
+    li~li { 
+        position: relative;
+        /* left: -100px;
+        top: -260px; */
+    }
+
+    ul:first-child {
+        position: relative;
+        /** top: -260px;
+        left: -67px; */
+    }
 
 
-    /** article */
+
+
+
+
+    /** Article - - - - - - - - - - - - - - - - - - - - - - */
     #intro {
         display: flex;
     }
 
-    /** article: details */
+    #intro ul {
+        display: flex;
+    }
+
+
+
+    /** Article: Details - - - - - - - - - - - - - - - - - - */
+
     #details {
         background-color: black;
         color: #7ABFBF;
@@ -177,10 +330,10 @@ footer img {
     
 
 
-    /** aside */
+    /** Aside - - - - - - - - - - - - - - - - - - - - - - */
     
 
 
-    /** footer */
+    /** Footer - - - - - - - - - - - - - - - - - - - - - - */
     
 }
