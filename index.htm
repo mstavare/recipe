@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <!--NOTE: Leave all the content in this order; do not rearrange the text. This is the order it needs to be for accessibility. Use CSS to visually order it for viewing. Also, note the title and heading that have been applied.  (Images/SVGs - locates files in the Google drive folder)
+        <!--NOTE: Leave all the content in this order; do not rearrange the text. This is the order it needs to be for accessibility. Use CSS to visually order it for viewing. Also, note the title and heading that have been applied. (Images/SVGs - locates files in the Google drive folder)
 
         FONTS= https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400  -->
 
@@ -38,8 +38,8 @@
                                         <polyline points="7 11 12 16 17 11" />
                                         <line x1="12" y1="4" x2="12" y2="16" />
                                     </svg>
+                                    <figcaption>Save</figcaption>
                                 </figure>
-                                <figcaption>Save</figcaption>
                             </a></li>
                             
                             <li><a href="#">
@@ -53,8 +53,8 @@
                                         <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
                                         <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
                                     </svg>
+                                    <figcaption>Share</figcaption>
                                 </figure>
-                                <figcaption>Share</figcaption>
                             </a></li>
                             
                             <li><a href="#">
@@ -66,8 +66,8 @@
                                         <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
                                         <rect x="7" y="13" width="10" height="8" rx="2" />
                                     </svg>
+                                    <figcaption>Print</figcaption>
                                 </figure>
-                                <figcaption>Print</figcaption>
                             </a></li>
                             
                             <li><a href="#">
@@ -80,8 +80,8 @@
                                         <path d="M14 3v4a1 1 0 0 0 1 1h4" />
                                         <path d="M5 11v-6a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-9.5" />
                                     </svg>
+                                    <figcaption>Jump to Recipe</figcaption>
                                 </figure>
-                                <figcaption>Jump to Recipe</figcaption>
                             </a></li>
 
                         </menu>
@@ -89,7 +89,7 @@
                         <!-- Street Tacos #intro text -->
                         <img src="images/street-tacos.png">
 
-                        <div>
+                        <div id="intro-text">
                             <p>Street tacos are delicious, amazing, and oh so mouthwatering! Bite into tender steak, zesty lime flavor with a hint of spice and add on tomatoes, avocado, and onions for a savory bite you are going to love!</p>
 
                             <p>These street tacos are completely jam-packed with flavor and they are so easy to make. I love how the meat is so tender and juicy and only takes an hour to marinate! If you absolutely love tacos like me, try out these other amazing taco recipes! These taco-stuffed avocados, Baja fish tacos, and ground beef tacos will not disappoint!!</p>
@@ -115,7 +115,7 @@
                     </dl>
                 </section>
  
-                <!--  <<<<<<<<<<<<<<<<<<<<<  - - - #ingredients  - - - >>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <!--  <<<<<<<<<<<<<<<<<<<<<  - - - #ingredients  - - - >>>>>>>>>>>>>>>>>>>>>>>>>-->
                 <section id="ingredients">
                     <h3>Ingredients</h3>
                     <ul>
@@ -131,34 +131,34 @@
                         <li>Pepper</li> 
                         <li>Corn tortillas</li>
                     </ul>
-                    
-                    <h3>Directions</h3>
-                    <ol>
-                        <li>
-                            Cut and mix: Cut the flank steak into one inch pieces. In a medium sized bowl add the soy sauce, Worcestershire, juice from one lime, cilantro, chili powder, cumin, and salt and pepper.
-                        </li>
-                        <li>
-                            Marinate: Add the steak and let marinate in the fridge for 1-2 hours.
-                        <li>
-                            Cook the meat: Heat a medium sized skillet to medium high heat. Add the steak and marinade and cook for about 5-7 minutes or until no longer pink.
-                        </li>
-                        <li>
-                            Add toppings: Put the steak in the center of your tortilla with desired toppings.
-                        </li>
-                    </ol>
                 </section>
-
+                    
+                    <section id="directions"><h3>Directions</h3>
+                        <ol>
+                            <li>
+                                Cut and mix: Cut the flank steak into one inch pieces. In a medium sized bowl add the soy sauce, Worcestershire, juice from one lime, cilantro, chili powder, cumin, and salt and pepper.
+                            </li>
+                            <li>
+                                Marinate: Add the steak and let marinate in the fridge for 1-2 hours.
+                            <li>
+                                Cook the meat: Heat a medium sized skillet to medium high heat. Add the steak and marinade and cook for about 5-7 minutes or until no longer pink.
+                            </li>
+                            <li>
+                                Add toppings: Put the steak in the center of your tortilla with desired toppings.
+                            </li>
+                        </ol>
+                    </section>
             </article>
 
 <!--  <<<<<<<<<<<<<<<<<<<<<  - - - Aside  - - - >>>>>>>>>>>>>>>>>>>>>>>>>-->
             <aside>
-                <h3>Need some side dishes?</h3>
+                <h2>Need some side dishes?</h2>
 
         <!--  <<<<<<<<<<<<<<<<<<<<<  - - - Mexican Rice  - - - >>>>>>>>>>>>>>>>>>>>>>>>>-->
-                <h4>Mexican Rice</h4>
+                <h3>Mexican Rice</h3>
                 <img src="images/mexican-rice.png">
                 <p>Traditional recipe with a twist.</p>
-                <p>Rating</p> 
+                <p class="bold">Rating</p> 
                 <!--4 of 5 Stars-->
                 
                 <div class="stars">
@@ -190,10 +190,10 @@
                 </div> 
                 
         <!--  <<<<<<<<<<<<<<<<<<<<<  - - - Salsa  - - - >>>>>>>>>>>>>>>>>>>>>>>>>-->                
-                Salsa
+                <h3>Salsa</h3>
                 <img src="images/salsa.png">
-                Just the right amount of spice.
-                Rating: 
+                <p>Just the right amount of spice.</p>
+                <p class="bold">Rating</p>
                 <!--5 of 5 Stars-->
                 
                 <div class="stars">
@@ -225,10 +225,10 @@
                 </div>
 
         <!--  <<<<<<<<<<<<<<<<<<<<<  - - - Guacamole  - - - >>>>>>>>>>>>>>>>>>>>>>>>>-->
-                <h4>Guacamole</h4>
+                <h3>Guacamole</h3>
                 <img src="images/guacamole.png">
                 <p>Fresh and healthy.</p>
-                <p>Rating</p>
+                <p class="bold">Rating</p>
                 <!--4 of 5 Stars-->
                 <div class="stars">
                     <!--star-->
@@ -259,11 +259,11 @@
                 </div>
 
         <!--  <<<<<<<<<<<<<<<<<<<<<  - - - Mexican Rice  - - - >>>>>>>>>>>>>>>>>>>>>>>>>-->            
-                <h4>Tortillas</h4>
+                <h3>Tortillas</h3>
                 <img src="images/tortillas.png">
                 <p>Easy to make and so good.</p>
-                <p>>Rating</p>
-                    <!-- 4 of 5 Stars ->
+                <p class="bold">Rating</p>
+                    <!-- 4 of 5 Stars -->
                 <div class="stars">    
                     <!--star-->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#EB5428" stroke-linecap="round" stroke-linejoin="round">
@@ -300,19 +300,6 @@
             <!-- ** ** ** ** **  Main Navigation ** ** ** ** ** -->
             <nav>
 
-                <input type="checkbox" id="hamburger">
-                <label for="hamburger">
-                    <span>
-                        <!-- Hamburger SVG --> 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"  style="enable-background:new 0 0 40 40" xml:space="preserve">
-                        <path d="M36 17.6c.1 1.8.1 3.6.1 5.4.1 2.7 0 5.5-.9 8-.5 1.4-1.3 2.6-2.4 3.6-3.3 2.7-6 2.4-12.6 2.4-4.6 0-9.2.2-12.2-1.9-2.5-1.8-3.6-4.2-3.8-7.1-.2-3.6.1-7.2.1-10.8 0-2.6.6-5.1 1.9-7.4 2.5-4.5 7.3-7.5 12.4-8 .4-.1.9-.1 1.4-.1 5.2 0 10.1 2.6 13 6.8 1 1.5 1.8 3.1 2.3 4.9.4 1.3.6 2.7.7 4.2z" style="fill:none;stroke:#eb5428;stroke-width:2;stroke-miterlimit:10"/>
-                        <path d="M36.1 22.6c0 .5-.1 1-.5 1.4-.5.7-1.4 1.2-2.6 1.3-2.8.2-5.8.1-8.6.1h-12c-1.3 0-2.6 0-3.8-.1-1.1 0-2.4 0-3.3-.6-.8-.6-1.2-1.4-1.2-2.2 0-.9.3-1.8 1.5-2.3.9-.4 2-.5 3.1-.5 1.4 0 2.8-.1 4.3-.1h14.5c1.2 0 2.3 0 3.5.1 1.7.1 3.3-.1 4.4 1 .3.6.7 1.3.7 1.9z" style="fill:none;stroke:#fff;stroke-width:2.0832;stroke-miterlimit:10"/>
-                        <path d="M38.5 22.6c0 .9-.2 1.7-.5 2.5-.6 1.3-1.7 2.1-3 2.2-3.3.3-6.7.2-9.9.2H11.2c-1.5 0-3-.1-4.4-.1-1.3-.1-2.8 0-3.8-1-.9-1-1.3-2.5-1.3-3.8 0-1.6.3-3.1 1.7-4 1-.7 2.3-.8 3.5-.8 1.6-.1 3.3-.1 4.9-.1H28.5c1.3 0 2.7 0 4 .1 2 .1 3.8-.1 5.1 1.7.5.9.9 2 .9 3.1z" style="fill:none;stroke:#eb5428;stroke-width:2.9408;stroke-miterlimit:10"/>
-                      </svg>
-                    </span>
-                </label>
-               
-
             <!-- ** ** ** ** ** Home Logo ** ** ** ** ** -->
 
                 <a href="index.htm" id="home-logo">
@@ -330,63 +317,101 @@
 
 
          <!-- ** ** ** ** ** Main Pages Navigation ** ** ** ** ** -->
+                <div id="hamburger-menu">
+                        <input type="checkbox" id="hamburger" type="checkbox"/>
+                        <label for="hamburger">
+                            <span>
+                                <!-- Hamburger SVG --> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"  style="enable-background:new 0 0 40 40" xml:space="preserve">
+                                <path d="M36 17.6c.1 1.8.1 3.6.1 5.4.1 2.7 0 5.5-.9 8-.5 1.4-1.3 2.6-2.4 3.6-3.3 2.7-6 2.4-12.6 2.4-4.6 0-9.2.2-12.2-1.9-2.5-1.8-3.6-4.2-3.8-7.1-.2-3.6.1-7.2.1-10.8 0-2.6.6-5.1 1.9-7.4 2.5-4.5 7.3-7.5 12.4-8 .4-.1.9-.1 1.4-.1 5.2 0 10.1 2.6 13 6.8 1 1.5 1.8 3.1 2.3 4.9.4 1.3.6 2.7.7 4.2z" style="fill:none;stroke:#eb5428;stroke-width:2;stroke-miterlimit:10"/>
+                                <path d="M36.1 22.6c0 .5-.1 1-.5 1.4-.5.7-1.4 1.2-2.6 1.3-2.8.2-5.8.1-8.6.1h-12c-1.3 0-2.6 0-3.8-.1-1.1 0-2.4 0-3.3-.6-.8-.6-1.2-1.4-1.2-2.2 0-.9.3-1.8 1.5-2.3.9-.4 2-.5 3.1-.5 1.4 0 2.8-.1 4.3-.1h14.5c1.2 0 2.3 0 3.5.1 1.7.1 3.3-.1 4.4 1 .3.6.7 1.3.7 1.9z" style="fill:none;stroke:#fff;stroke-width:2.0832;stroke-miterlimit:10"/>
+                                <path d="M38.5 22.6c0 .9-.2 1.7-.5 2.5-.6 1.3-1.7 2.1-3 2.2-3.3.3-6.7.2-9.9.2H11.2c-1.5 0-3-.1-4.4-.1-1.3-.1-2.8 0-3.8-1-.9-1-1.3-2.5-1.3-3.8 0-1.6.3-3.1 1.7-4 1-.7 2.3-.8 3.5-.8 1.6-.1 3.3-.1 4.9-.1H28.5c1.3 0 2.7 0 4 .1 2 .1 3.8-.1 5.1 1.7.5.9.9 2 .9 3.1z" style="fill:none;stroke:#eb5428;stroke-width:2.9408;stroke-miterlimit:10"/>
+                                </svg>
+                                Menu
+                            </span>
+                        </label>
 
-                <ul id="mainnav">
-                    <li>
-                        <a href="#">
-                            <h5>Breakfast</h5> 
-                            <img src="images/breakfast.png">
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Brunch 
-                        <img src="images/brunch.png"></a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Lunch 
-                    <img src="images/lunch.png"></a>
-                    </li>
+                    <ul id="mainnav">
+                        <li>
+                            <a href="#">
+                                <figcaption>Breakfast</figcaption> 
+                                <img src="images/breakfast.png">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <figcaption>Brunch</figcaption>
+                                <img src="images/brunch.png">
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <figcaption>Lunch</figcaption> 
+                                <img src="images/lunch.png">
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#">Dinner 
-                        <img src="images/dinner.png"></a>
-                    </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <figcaption>Dinner</figcaption>
+                                    <img src="images/dinner.png">
+                                </figure>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#">Appetizers 
-                        <img src="images/appetizers.png"></a>
-                    </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <figcaption>Appetizers</figcaption> 
+                                    <img src="images/appetizers.png">
+                                </figure>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#">Desserts 
-                        <img src="images/desserts.png"></a>
-                    </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <figcaption>Desserts</figcaption> 
+                                    <img src="images/desserts.png">
+                                </figure>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#">Beverages 
-                        <img src="images/beverages.png"></a>
-                    </li>
-                </ul>
-            </nav>
-
-        <!-- ** ** ** ** **  Sign In ** ** ** ** **  -->    
-                <!-- ** ** ** ** **  Avatar SVG ** ** ** ** **  -->
-                <div id="sign-in">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="9" />
-                        <circle cx="12" cy="10" r="3" />
-                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                    </svg>
-                    <h5> Sign In</h5>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <figcaption>Beverages</figcaption> 
+                                    <img src="images/beverages.png">
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+
+                 <!-- ** ** ** ** **  Sign In ** ** ** ** **  -->    
+                <div id="sign-in">
+                    <figure>
+                        <!-- ** ** ** ** **  Avatar SVG ** ** ** ** **  -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="12" r="9" />
+                            <circle cx="12" cy="10" r="3" />
+                            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                        </svg>
+                        <figcaption> Sign In</figcaption>
+                    </figure>
+                </div>
+            
+
 
         <!-- ** ** ** ** **  Search ** ** ** ** ** -->
                 <div id="search">
-                    <input type="text" id="site-search" placeholder="Find a recipe">
-                    <button>
+                    <input type="text" placeholder="Find a recipe">
+            
+                    <button class="search-button">
                         <!--search SVG-->
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="#EB5428" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -395,17 +420,7 @@
                         </svg>
                     </button>
                 </div>
-
-
-                <div class="container">
-                    <div class="search-box">
-                       <input type="text" class="search-input" placeholder="Search..">
-                 
-                       <button class="search-button">
-                         <i class="fas fa-search"></i>
-                       </button>
-                    </div>
-                 </div>
+            </nav>     
         </header>
 
         
@@ -417,44 +432,52 @@
                     Social Media Links 
                 -->
                 
-                <menu>
+                <menu id="social">
                     <!--** ** ** ** ** facebook ** ** ** ** **-->
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                            </svg>
-                            <h5>Facebook</h5>
+                            <figure>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                </svg>
+                                <figcaption>Facebook</figcaption>
+                            </figure>
                         </li>
 
                 <!-- ** ** ** ** ** instagram ** ** ** ** ** -->
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <rect x="4" y="4" width="16" height="16" rx="4" />
-                                <circle cx="12" cy="12" r="3" />
-                                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                            </svg>
-                            <h5>Instagram</h5>
+                            <figure>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                                    <circle cx="12" cy="12" r="3" />
+                                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                                </svg>
+                                <figcaption>Instagram</figcaption>
+                            </figure>
                         </li> 
                         
                 <!-- ** ** ** ** ** youtube ** ** ** ** **-->
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <rect x="3" y="5" width="18" height="14" rx="4" />
-                                <path d="M10 9l5 3l-5 3z" />
-                            </svg>
-                            <h5>YouTube</h5>
+                            <figure>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <rect x="3" y="5" width="18" height="14" rx="4" />
+                                    <path d="M10 9l5 3l-5 3z" />
+                                </svg>
+                                <figcaption>YouTube</figcaption>
+                            </figure>
                         </li> 
                         
                 <!-- ** ** ** ** ** tiktok ** ** ** ** ** -->
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
-                            </svg>
-                            <h5>Tik Tok</h5>
+                            <figure>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EB5428" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+                                </svg>
+                                <figcaption>Tik Tok</figcaption>
+                            </figure>
                         </li>
                 </menu> 
             
