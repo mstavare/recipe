@@ -1,12 +1,14 @@
 /** >>>>>>>>>>>>> - - - - - - Global Styles - - - - - - <<<<<<<<<<<<<<<< */
 * {
     box-sizing: border-box; 
-    margin: auto;
+   
 }
 
 Body {
     background-color: rgba(122, 191, 191, .5);
     max-width: 1280px;
+    min-width: 400px;
+    margin: auto;
 }
 
 h1, h2, h3, h4, h5, nav, a, small, label span, figcaption{
@@ -53,14 +55,15 @@ nav a, nav span, figcaption, menu li, #social li, small{
 nav {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr 1fr;
     justify-items: center;
     align-items: stretch;
     grid-template-areas:
       "first second third"
-      "fourth fifth sixth";
+      "fourth fourth fourth";
     text-align: center;
-    background-color: #F2F2F2
+    background-color: #F2F2F2;
+    min-width: 400px;
   }
   
   #home-logo {
@@ -74,31 +77,31 @@ nav {
   
 #hamburger-menu {
     grid-area: first;
-    height: 100px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #ffffff;   
   }
+
 #sign-in {
-    background-color: ;
     grid-area: third;
-    height: 100px;
+    color: #EB5428;
+    background-color: ffffff;
     width: 100%;
-    padding-top: 20px;
-    background-color: #ffffff;
   }
   
 #search {
-    grid-area: fifth;
+    grid-area: fourth;
     height: 50px;
+    padding-top: 5px;
   }
 
-#hamburger-menu>div {
+#hamburger-menu span {
+    color: #EB5428;
     padding-top: 20px;
+    padding-left: 4vw;
     text-align: center;
   }
 
 Header {
-    background-color: #ffffff;
     position: absolute;
     top: 0px;
     height: 100px;
@@ -109,24 +112,23 @@ Header {
 Header nav img{
     max-width: 100px;
 }
-
-#sign-in {
-    color: #EB5428;
-    background-color: ffffff;
-}
     
 #search button {
     background-color: #EB5428;
     border: 0;
+    position: relative;
+    top: 8px;
+    left: -5px;
+    padding: 0px;
 }
     
 #search svg {
-    height: 27px;
+    height: 28px;
 }
     
 #search input {
-    height: 30px;
-    width: 200px;
+    height: 31px;
+    width: 150px;
     border: solid 2px #EB5428;
 }
 
@@ -142,9 +144,12 @@ article img {
 }
 
 article menu {
-    display: flex;
-    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     text-align: center;
+    color: #EB5428;
+    padding: 0;
 }
 
 #tacos {
@@ -153,8 +158,9 @@ article menu {
 
 h1 {
     font-size: 40px;
-    padding-bottom: 30px;
+    padding: 10px;
     text-align: center;
+    margin: 0;
 }
 
 article p{
@@ -189,7 +195,7 @@ article h3 {
  padding-top: 5px;
 }
 
-#directions, #ingredients {
+#directions {
     padding-top: 5px;
     padding-bottom: 25px; 
 }
@@ -197,63 +203,121 @@ article h3 {
     padding: 5px;
 }
 
+#directions h3, #ingredients h3, #details h2 {
+    margin-top: 0;
+}
+
 
 /** >>>>>>>>>>>>>>> - - - - - - ASIDE (Side Dishes) Styles - - - - - - <<<<<<<<<<<<<<<< */
 aside {
     background-color: #7ABFBF;
-    padding: 15px 0px 0px 15px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 90px repeat(4, 50px 54px 24px 80px);
+    align-items: start;
+    grid-template-areas: 
+        "title title"
+        "rice A"
+        "rice B"
+        "rice C"
+        "rice D"
+        "salsa E"
+        "salsa F"
+        "salsa G"
+        "salsa H"
+        "guac I"
+        "guac J"
+        "guac K"
+        "guac L"
+        "tort M"
+        "tort N"
+        "tort O"
+        "tort P";
 }
 
 aside img {
-    max-width: 30%;
-    padding: 0;
-    margin-bottom: -90px;
+    max-width: 180px;
+    padding-left: 20px;
 }
 
-aside h3, aside p, aside div {
-    position: relative;
-    left: 33%;
+aside h3, aside p, aside div { 
+    padding-left: 15px;
+    margin: 0;
+}
+aside h2{
+    grid-area: title;
+    padding-bottom: 10px;
 }
 
-aside h3 {
-    top: 27px;
+h3.rice  {
+    grid-area: A;
 }
 
-aside p, aside div{
-    top: -90px;
-    padding: 10px;
+img.rice {
+    grid-area: rice;
 }
 
+h3.salsa {
+    grid-area: E;
+}
+
+img.salsa {
+    grid-area: salsa;
+}
+
+h3.guac {
+    grid-area: I;
+}
+
+img.guac {
+    grid-area: guac;
+}
+
+h3.tort {
+    grid-area: M;
+}
+
+img.tort {
+    grid-area: tort;
+}
 
 /** >>>>>>>>>>>>>>> - - - - - - Footer Styles - - - - - - <<<<<<<<<<<<<<<< */
 footer {
     background-color: #ffffff;
-    padding: 15px 15px 95px 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 3fr 1fr;
+    grid-template-areas: 
+        "menu"
+        "img"
+        "small";
+    justify-items: center;
 }
 
 footer img {
-    max-width: 40%;
-    position:relative;
-    left: 30%;
-    padding: 20px 0 0 0;
+    grid-area: img;
+    max-width: 200px;
+    margin-top: 0;
 }
 
 small {
-    display: block;
-    position: absolute;
-    bottom: 40px;
     text-align: center;
-    left: 43%;
-}
-
-small~small{
-    position: absolute;
-    bottom: 20px;
+    grid-area: small;
+    padding-top: 20px;
+    margin-top: 0;
 }
 
 footer menu {
     display: flex;
+    text-align: center;
+    color: #EB5428;
+    grid-area: menu;
+    margin-bottom: 0;
+}
 
+footer menu li figure{
+    margin: 20px;
 }
 
 /** >>>>>>>>>>>>> - - - - Hamburger Menu Styles - - - - - <<<<<<<<<<<<<<<< */
@@ -283,7 +347,6 @@ footer menu {
         label {
             cursor: pointer;
             display: inline-block;
-            padding: 28px 20px;
             position: relative;
             user-select: none;
             position: absolute;
@@ -350,109 +413,188 @@ footer menu {
 @media screen and (min-width: 767px) and (max-width: 1279px) {
     
     /** Header - - - - - - - - - - - - - - - - - - - - - - */
+    nav {
+        display: grid;
+        grid-template-columns: 90px repeat(5, 1fr) 180px;
+        grid-template-rows: 90px 190px;
+        grid-template-areas:
+          "home blank blank search search search sign"
+          "mainnav mainnav mainnav mainnav mainnav mainnav mainnav";
+        text-align: center;
+        background-color: white;
+        min-width: 400px;
+        border-bottom: solid 2px rgb(193, 189, 189);
+      }
+      
+    #home-logo {
+        background-color: #EB5428;
+        grid-area: home;
+        padding: 15px;
+      }
+      
+    #sign-in {
+        grid-area: sign;
+        color: #EB5428;
+        width: 100%;
+        background-color: #ffffff;
+        padding-top: 0px;
+        margin-top: 0;
+      }
     
+    #sign-in figure{
+        margin: 15px;
+    }
+    #search input {
+        width: 230px;
+    }
+      
+    #search {
+        grid-area: search;
+        height: 50px;
+        padding-top: 5px;
+        justify-self: end;
+      }
+
+      #hamburger-menu {
+        grid-area: mainnav;
+        align-self: center;
+    }
+
     #mainnav {
-        display: /*flex; */
+        overflow: visible;
+        display: flex;
+        position: relative;
+        top: -20px;
+        justify-content: space-evenly;
+        
     }
 
-    #mainnav li a{
-       /** display: flex;
-        flex-direction: column; */
+    #mainnav li {
+        width: 100px;
+        margin: 20px 0 20px 0;
     }
 
+    #mainnav figure {
+        margin: 0;
+        
+    }
 
+    #mainnav figcaption{
+        position: relative;
+        top: 130px;
+        text-align: center;
+        
+    }
+
+    #hamburger-menu label span, nav>input {
+        display: none;
+    }
 
     /** Article - - - - - - - - - - - - - - - - - - - - - - */
 
+    article {
+        padding-top: 140px;
+    }
+
+    h1 {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    #intro menu {
+        background-color: rgba(242, 242, 242, .7);
+        z-index: 3;
+        position: relative;
+        top: -5px;
+    }
     #intro img {
-        max-width: 100%;
+        position: relative;
+        top: -130px;
+    }
+
+    #intro-text {
+        margin-top: -130px;
+        margin-bottom: 20px;
+    }
+    #intro p {
+        margin: 0;
     }
 
 
+    /** Article: details ingredients directions - - - - - - - - - - - - - - - - - */
+        #details dl{
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+            padding: 0 200px 25px 200px;
+         }
 
-    /** Article: details - - - - - - - - - - - - - - - - - */
-        #details {
-            background-color: red;
-    }
+        #ingredients-directions {
+            display: flex;
+            gap: 20px;
+            justify-items: center;
+        }
 
+        #ingredients {
+           flex-basis: 60%;
+        }
+        #directions {
+            padding: 0;
+         }
 
     /** Aside - - - - - - - - - - - - - - - - - - - - - - */
+         aside {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr 3fr;
+            grid-template-rows: 3fr 1fr 1fr 2fr 1fr 1fr 2fr ;
+            grid-template-areas: 
+                "title title title title"
+                "rice A salsa E"
+                "rice B salsa F"
+                "rice C salsa G"
+                "guac I tort M"
+                "guac J tort N"
+                "guac K tort O";
+    
+            padding-bottom: 25px;
+            row-gap: 10px;
+         }
+         p.rice.bold, div.rice {
+            grid-area: C;
+         }
+         p.salsa.bold, div.salsa {
+            grid-area: G;
+         }
+         p.guac.bold, div.guac {
+            grid-area: K;
+         }
+         p.tort.bold, div.tort {
+            grid-area: O;
+         }
 
-
+         aside div {
+            position: relative;
+            left: 70px;
+         }
 
     /** Footer - - - - - - - - - - - - - - - - - - - - - - */
+         footer {
+            grid-template-columns: 2fr 3fr;
+            grid-template-rows: 3fr 1fr;
+            grid-template-areas: 
+                "img menu"
+                "small empty";
+            padding-top: 20px;
+         }
 
-
-
+}
 
 /**  >>>>>>>>>>>>> - - - - Responsive Styles (Large) - - - - - <<<<<<<<<<<<<<<< */
-}
+
 @media screen and (min-width: 1280px) {
     
     /** Header - - - - - - - - - - - - - - - - - - - - - -*/
     
-    #mainnav {
-        display: flex;
-        padding: 0;
-    }
-
-    #mainnav li a{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap
-    }
-
-    #mainnav li a h5{
-       position: relative;
-       top: 100px;
-       color: red;
-    }
-
-    /** experimental nav styles */
-
-    #hamburger {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        padding: 0;
-    }
-
-    #hamburger li {
-        position: relative;
-        /*  left: -100px;
-        top: -260px; */
-    }
-
-    label span, nav input {
-        display: none;
-    }
-
-    nav {
-        position: relative;
-        top: 0px;
-        left: 0;
-    }
-
-    /* logo */ # {
-        position: relative;
-        left: 37px;
-        top: 0;
-    }
-
-    #hamburger li~li { 
-        position: relative;
-        /* left: -100px;
-        top: -260px; */
-    }
-
-    ul:first-child {
-        position: relative;
-        /** top: -260px;
-        left: -67px; */
-    }
+    
 
 
     /** Article - - - - - - - - - - - - - - - - - - - - - - */
