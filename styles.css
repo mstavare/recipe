@@ -52,6 +52,7 @@ nav a, nav span, figcaption, menu li, #social li, small{
 
 
 /** >>>>>>>>>>>>> - - - - - - Header Styles - - - - - - <<<<<<<<<<<<<<<< */
+@media screen and (max-width: 766px) {
 nav {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -65,6 +66,7 @@ nav {
     background-color: #F2F2F2;
     min-width: 400px;
   }
+}
   
   #home-logo {
     background-color: #EB5428;
@@ -412,7 +414,7 @@ footer menu li figure{
 
 @media screen and (min-width: 767px) and (max-width: 1279px) {
     
-    /** Header - - - - - - - - - - - - - - - - - - - - - - */
+    /** Header (Medium)- - - - - - - - - - - - - - - - - - - - - - */
     nav {
         display: grid;
         grid-template-columns: 90px repeat(5, 1fr) 180px;
@@ -490,7 +492,7 @@ footer menu li figure{
         display: none;
     }
 
-    /** Article - - - - - - - - - - - - - - - - - - - - - - */
+    /** Article (Medium)- - - - - - - - - - - - - - - - - - - - - - */
 
     article {
         padding-top: 140px;
@@ -521,7 +523,7 @@ footer menu li figure{
     }
 
 
-    /** Article: details ingredients directions - - - - - - - - - - - - - - - - - */
+    /** Article: details ingredients directions (Medium)- - - - - - - - - - - - - - - - - */
         #details dl{
             justify-items: center;
             grid-template-columns: 1fr 1fr;
@@ -541,7 +543,7 @@ footer menu li figure{
             padding: 0;
          }
 
-    /** Aside - - - - - - - - - - - - - - - - - - - - - - */
+    /** Aside (Medium)- - - - - - - - - - - - - - - - - - - - - - */
          aside {
             display: grid;
             grid-template-columns: 1fr 3fr 1fr 3fr;
@@ -576,7 +578,7 @@ footer menu li figure{
             left: 70px;
          }
 
-    /** Footer - - - - - - - - - - - - - - - - - - - - - - */
+    /** Footer (Medium) - - - - - - - - - - - - - - - - - - - - - - */
          footer {
             grid-template-columns: 2fr 3fr;
             grid-template-rows: 3fr 1fr;
@@ -588,43 +590,201 @@ footer menu li figure{
 
 }
 
-/**  >>>>>>>>>>>>> - - - - Responsive Styles (Large) - - - - - <<<<<<<<<<<<<<<< */
+/**  >>>>>>>>>>>>> - - - - Responsive Styles (LARGE) - - - - - <<<<<<<<<<<<<<<< */
 
 @media screen and (min-width: 1280px) {
     
-    /** Header - - - - - - - - - - - - - - - - - - - - - -*/
-    
-    
-
-
-    /** Article - - - - - - - - - - - - - - - - - - - - - - */
-    #intro {
-        display: flex;
-    }
-
-    #intro ul {
-        display: flex;
-    }
-
-    article img {
-        max-width: 600px;
-    }
-
-    /** Article: Details - - - - - - - - - - - - - - - - - - */
-
-    #details {
-        background-color: black;
-        color: #7ABFBF;
+    /** Header (LARGE)- - - - - - - - - - - - - - - - - - - - - - */
+    nav {
+        display: grid;
+        grid-template-columns: 90px repeat(5, 1fr) 180px;
+        grid-template-rows: 150px 5px;
+        grid-template-areas:
+          "home search search search search search sign"
+          "mainnav mainnav mainnav mainnav mainnav mainnav mainnav";
         text-align: center;
-        padding: 1px 0 5px 0;
-    }
+        background-color: white;
+        min-width: 400px;
+        border-bottom: solid 2px rgb(193, 189, 189);
+      }
+            #home-logo {
+                background-color: #EB5428;
+                grid-area: home;
+                padding: 0;
+                height: 90px;
+              }
+              
+            #sign-in {
+                grid-area: sign;
+                color: #EB5428;
+                width: 100%;
+                background-color: #ffffff;
+                padding-top: 0px;
+                margin-top: 0;
+              }
+            
+            #sign-in figure{
+                margin: 15px;
+            }
+
+            #search input {
+                width: 280px;
+                height: 50px;
+            }
+            #search button {
+                height: 50px;
+            }
+              
+            #search {
+                grid-area: mainnav;
+                padding-top: 35px;
+                justify-self: center;
+              }
+            
+              #hamburger-menu {
+                grid-area: search;
+                align-self: center;
+            }
+        
+            #mainnav {
+                overflow: visible;
+                display: flex;
+                position: relative;
+                top: -20px;
+                justify-content: space-evenly;  
+            }
+        
+            #mainnav li {
+                    width: 100px;
+                    margin: 20px 0 20px 0;
+            } 
+
+            #mainnav figure {
+                margin: 0;
+            }
+        
+            #mainnav figcaption{
+                position: relative;
+                top: 130px;
+                text-align: center;
+            }
+        
+            #hamburger-menu label span, nav>input {
+                display: none;
+            } 
+        
+            /** Article (LARGE)- - - - - - - - - - - - - - - - - - - - - - */
+        
+             article {
+               padding-top: 105px;
+            }
+        
+            #intro {
+                display: flex;
+                padding-top: 25px;
+            }
+        
+            h1 {
+                text-align: center;
+                padding-left: 0px;
+            }
+        
+            #intro menu {
+                background-color: white;
+                border: 3px solid #EB5428;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+
+            #intro img {  
+                height: 750px;
+                width: 500px;
+            }
+        
+            #intro-text {
+                padding-left: 20px;
+                padding-right: 25px;
+            }
+            #intro p {
+                margin: 0;
+                line-height: 2;
+            }
+
+            #tacos {
+                padding-top: 60px;
+            }
+
     
-
-
-    /** Aside - - - - - - - - - - - - - - - - - - - - - - */
     
-
-
-    /** Footer - - - - - - - - - - - - - - - - - - - - - - */
+        /** Article: details ingredients directions (LARGE)- - - - - - - - - - - - - - - - - */
+         #details {
+            background-color: black;
+            color: #7ABFBF;
+        }    
     
+        #details dl{
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+            padding: 0 200px 25px 200px;
+        }
+    
+        #ingredients-directions {
+            display: flex;
+            gap: 20px;
+            justify-items: center;
+        }
+    
+        #ingredients {
+            flex-basis: 60%;
+        }
+        #directions {
+            padding: 0;
+        }
+    
+        /** Aside (LARGE)- - - - - - - - - - - - - - - - - - - - - - */
+        /* aside {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr 3fr;
+            grid-template-rows: 3fr 1fr 1fr 2fr 1fr 1fr 2fr ;
+            grid-template-areas: 
+                 "title title title title"
+                "rice A salsa E"
+                "rice B salsa F"
+                "rice C salsa G"
+                "guac I tort M"
+                "guac J tort N"
+                "guac K tort O";
+        
+            padding-bottom: 25px;
+            row-gap: 10px;
+            }
+        p.rice.bold, div.rice {
+            grid-area: C;
+        }
+        p.salsa.bold, div.salsa {
+            grid-area: G;
+        }
+        p.guac.bold, div.guac {
+            grid-area: K;
+        }
+        p.tort.bold, div.tort {
+            grid-area: O;
+        }
+    
+        aside div {
+            position: relative;
+            left: 70px;
+        }
+    
+        /** Footer (LARGE) - - - - - - - - - - - - - - - - - - - - - - */
+        /* footer {
+            grid-template-columns: 2fr 3fr;
+            grid-template-rows: 3fr 1fr;
+            grid-template-areas: 
+                "img menu"
+                "small empty";
+            padding-top: 20px;
+        }
+    */
 }
