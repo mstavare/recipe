@@ -597,8 +597,8 @@ footer menu li figure{
     /** Header (LARGE)- - - - - - - - - - - - - - - - - - - - - - */
     nav {
         display: grid;
-        grid-template-columns: 90px repeat(5, 1fr) 180px;
-        grid-template-rows: 150px 5px;
+        grid-template-columns: 110px repeat(5, 1fr) 110px;
+        grid-template-rows: 110px 0px;
         grid-template-areas:
           "home search search search search search sign"
           "mainnav mainnav mainnav mainnav mainnav mainnav mainnav";
@@ -606,58 +606,63 @@ footer menu li figure{
         background-color: white;
         min-width: 400px;
         border-bottom: solid 2px rgb(193, 189, 189);
+        gap:0px;
       }
-            #home-logo {
-                background-color: #EB5428;
-                grid-area: home;
-                padding: 0;
-                height: 90px;
-              }
+        #home-logo {
+            background-color: #EB5428;
+            grid-area: home;
+            padding: 0;
+            height: 100%;
+            justify-self: center;
+        }
               
-            #sign-in {
-                grid-area: sign;
-                color: #EB5428;
-                width: 100%;
-                background-color: #ffffff;
-                padding-top: 0px;
-                margin-top: 0;
-              }
+        #sign-in {
+            grid-area: sign;
+            color: #EB5428;
+            width: 100%;
+            background-color: #ffffff;
+            padding-top: 0px;
+            margin-top: 25px;
+        }
             
-            #sign-in figure{
-                margin: 15px;
-            }
+        #sign-in figure{
+            margin: 0;
+        }
 
-            #search input {
-                width: 280px;
-                height: 50px;
-            }
-            #search button {
-                height: 50px;
-            }
+        #search input {
+            width: 280px;
+            height: 50px;
+        }
+        #search button {
+            height: 50px;
+        }
               
-            #search {
-                grid-area: mainnav;
-                padding-top: 35px;
-                justify-self: center;
-              }
+        #search {
+            grid-area: mainnav;
+            padding-top: 35px;
+            justify-self: center;
+        }
             
-              #hamburger-menu {
-                grid-area: search;
-                align-self: center;
-            }
+        #hamburger-menu {
+            grid-area: search;
+            align-self: center;
+        }
         
-            #mainnav {
-                overflow: visible;
-                display: flex;
-                position: relative;
-                top: -20px;
-                justify-content: space-evenly;  
-            }
+        #mainnav {
+            overflow: visible;
+            display: flex;
+            position: relative;
+            top: -25px;
+        }
         
             #mainnav li {
-                    width: 100px;
-                    margin: 20px 0 20px 0;
+                    width: 90px;
+                    margin: 30px 10px 20px 10px;
             } 
+
+            #mainnav img {
+                height: 62px;
+            }
 
             #mainnav figure {
                 margin: 0;
@@ -665,7 +670,7 @@ footer menu li figure{
         
             #mainnav figcaption{
                 position: relative;
-                top: 130px;
+                top: 90px;
                 text-align: center;
             }
         
