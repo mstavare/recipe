@@ -724,6 +724,7 @@ footer menu li figure{
     
         /** Article: details ingredients directions (LARGE)- - - - - - - - - - - - - - - - - */
          #details {
+            padding-top: 20px;
             background-color: black;
             color: #7ABFBF;
         }    
@@ -731,6 +732,7 @@ footer menu li figure{
         #details dl{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             text-align: center;
             justify-items: center;
         }
@@ -749,27 +751,29 @@ footer menu li figure{
         #ingredients {
             flex-basis: 60%;
         }
-        #directions {
-            padding: 0;
+        #directions, #ingredients {
+           padding-top: 20px;
         }
     
         /** Aside (LARGE)- - - - - - - - - - - - - - - - - - - - - - */
-        /* aside {
+        aside {
             display: grid;
-            grid-template-columns: 1fr 3fr 1fr 3fr;
-            grid-template-rows: 3fr 1fr 1fr 2fr 1fr 1fr 2fr ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 80px 256px 40px 40px 50px;
             grid-template-areas: 
                  "title title title title"
-                "rice A salsa E"
-                "rice B salsa F"
-                "rice C salsa G"
-                "guac I tort M"
-                "guac J tort N"
-                "guac K tort O";
+                "rice salsa guac tort"
+                "A E I M"
+                "B F J N"
+                "C G K O";
+            padding: 0 25px 25px 50px;
+            
+        }
         
-            padding-bottom: 25px;
-            row-gap: 10px;
-            }
+        aside img {
+            max-width: 256px;
+            
+        }    
         p.rice.bold, div.rice {
             grid-area: C;
         }
@@ -782,7 +786,6 @@ footer menu li figure{
         p.tort.bold, div.tort {
             grid-area: O;
         }
-    
         aside div {
             position: relative;
             left: 70px;
