@@ -611,9 +611,7 @@ footer menu li figure{
         #home-logo {
             background-color: #EB5428;
             grid-area: home;
-            padding: 0;
             height: 100%;
-            justify-self: center;
         }
               
         #sign-in {
@@ -635,6 +633,8 @@ footer menu li figure{
         }
         #search button {
             height: 50px;
+            position: relative;
+            top: 7px;
         }
               
         #search {
@@ -729,9 +729,15 @@ footer menu li figure{
         }    
     
         #details dl{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            text-align: center;
             justify-items: center;
-            grid-template-columns: 1fr 1fr;
-            padding: 0 200px 25px 200px;
+        }
+
+        #details dl dd {
+            order: 2;
+            margin: 0;
         }
     
         #ingredients-directions {
