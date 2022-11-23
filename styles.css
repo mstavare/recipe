@@ -133,7 +133,13 @@ Header nav img{
     width: 150px;
     border: solid 2px #EB5428;
 }
-
+/* add hover styles -->*/
+#mainnav li{
+   transition: background-color 1s ease;
+}
+#mainnav li:hover {
+    background-color: #d98d77;
+}
 
 
 /**  >>>>>>>>>>>>> - - - - - - Street Tacos (#intro) Styles - - - - - - <<<<<<<<<<<<<<<< */
@@ -792,13 +798,19 @@ footer menu li figure{
         }
     
         /** Footer (LARGE) - - - - - - - - - - - - - - - - - - - - - - */
-        /* footer {
-            grid-template-columns: 2fr 3fr;
-            grid-template-rows: 3fr 1fr;
+        footer {
+            grid-template-columns: 1fr 1fr 3fr;
+            grid-template-rows: 1fr;
             grid-template-areas: 
-                "img menu"
-                "small empty";
-            padding-top: 20px;
+                "img small menu";
+            gap: 20px;
+            padding: 20px 40px 20px 20px;
         }
-    */
+
+        footer menu {
+            justify-self: end;
+        }
+        footer small {
+            justify-self: start;
+        }
 }
