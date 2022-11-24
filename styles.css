@@ -69,8 +69,7 @@ nav {
 
   #mainnav li {
     height: 170px;
-    width: 120px;
-    margin: -10px 0 0 0;
+    padding: 0 0 20px 0;
     }
 }
   
@@ -94,6 +93,7 @@ nav {
     color: #EB5428;
     background-color: ffffff;
     width: 100%;
+    margin-top: -10px;
   }
   
 #search {
@@ -456,20 +456,27 @@ footer menu li figure{
         width: 100%;
         background-color: #ffffff;
         padding-top: 0px;
-        margin-top: 0;
+        margin: 0 -10px 0 0;
+        justify-self: right;
       }
     
     #sign-in figure{
-        margin: 15px;
+        margin: 15px 0 0 0;
     }
+
     #search input {
-        width: 230px;
+        width: 280px;
+        height: 50px;
+    }
+
+    #search button {
+        height: 50px;
     }
       
     #search {
         grid-area: search;
         height: 50px;
-        padding-top: 5px;
+        padding-top: 10px;
         justify-self: end;
       }
 
@@ -489,21 +496,23 @@ footer menu li figure{
     }
 
     #mainnav li {
-            height: 170px;
+            height: 150px;
             width: 120px;
             margin: 0;
     }
 
+    #mainnav img {
+        width: 80px;
+    }
+
     #mainnav figure {
-        margin: 0;
-        
+        margin: 0; 
     }
 
     #mainnav figcaption{
         position: relative;
-        top: 130px;
+        top: 110px;
         text-align: center;
-        
     }
 
     #hamburger-menu label span, nav>input {
