@@ -1,7 +1,6 @@
 /** >>>>>>>>>>>>> - - - - - - Global Styles - - - - - - <<<<<<<<<<<<<<<< */
 * {
     box-sizing: border-box; 
-   
 }
 
 Body {
@@ -53,6 +52,7 @@ nav a, nav span, figcaption, menu li, #social li, small{
 
 /** >>>>>>>>>>>>> - - - - - - Header Styles - - - - - - <<<<<<<<<<<<<<<< */
 @media screen and (max-width: 766px) {
+
 nav {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -66,9 +66,15 @@ nav {
     background-color: #F2F2F2;
     min-width: 400px;
   }
+
+  #mainnav li {
+    height: 170px;
+    width: 120px;
+    margin: -10px 0 0 0;
+    }
 }
   
-  #home-logo {
+#home-logo {
     background-color: #EB5428;
     grid-area: second;
     align-self: center;
@@ -133,10 +139,14 @@ Header nav img{
     width: 150px;
     border: solid 2px #EB5428;
 }
+
+
+
 /* add hover styles -->*/
 #mainnav li{
    transition: background-color 1s ease;
 }
+
 #mainnav li:hover {
     background-color: #d98d77;
 }
@@ -474,12 +484,14 @@ footer menu li figure{
         position: relative;
         top: -20px;
         justify-content: space-evenly;
+        padding-top: 20px;
         
     }
 
     #mainnav li {
-        width: 100px;
-        margin: 20px 0 20px 0;
+            height: 170px;
+            width: 120px;
+            margin: 0;
     }
 
     #mainnav figure {
@@ -614,6 +626,7 @@ footer menu li figure{
         border-bottom: solid 2px rgb(193, 189, 189);
         gap:0px;
       }
+
         #home-logo {
             background-color: #EB5428;
             grid-area: home;
@@ -658,37 +671,38 @@ footer menu li figure{
             overflow: visible;
             display: flex;
             position: relative;
-            top: -25px;
+            top: -10px;
         }
         
-            #mainnav li {
-                    width: 90px;
-                    margin: 30px 10px 20px 10px;
-            } 
+        #mainnav li {
+            width: 90px;
+            height: 120px;
+            margin: 30px 10px 20px 10px;
+        } 
 
-            #mainnav img {
-                height: 62px;
-            }
+        #mainnav img {
+            height: 62px;
+        }
 
-            #mainnav figure {
-                margin: 0;
-            }
+        #mainnav figure {
+            margin: 0;
+        }
         
-            #mainnav figcaption{
-                position: relative;
-                top: 90px;
-                text-align: center;
-            }
+        #mainnav figcaption{
+            position: relative;
+            top: 90px;
+            text-align: center;
+        }
         
-            #hamburger-menu label span, nav>input {
-                display: none;
-            } 
+        #hamburger-menu label span, nav>input {
+            display: none;
+        } 
         
-            /** Article (LARGE)- - - - - - - - - - - - - - - - - - - - - - */
+        /** Article (LARGE)- - - - - - - - - - - - - - - - - - - - - - */
         
-             article {
-               padding-top: 105px;
-            }
+            article {
+            padding-top: 105px;
+        }
         
             #intro {
                 display: flex;
@@ -777,12 +791,13 @@ footer menu li figure{
         }
         
         aside img {
-            max-width: 256px;
-            
-        }    
+            max-width: 256px;   
+        }  
+
         p.rice.bold, div.rice {
             grid-area: C;
         }
+
         p.salsa.bold, div.salsa {
             grid-area: G;
         }
