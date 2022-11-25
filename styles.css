@@ -48,7 +48,20 @@ nav a, nav span, figcaption, menu li, #social li, small{
     font-size: 20px;
 }
 
+menu figcaption {
+    color: #EB5428;
+    transition: all 1s ease;
+}
 
+#sign-in figcaption {
+    color: black;
+    transition: all 1s ease;
+}
+
+menu figcaption:hover, #sign-in figcaption:hover {
+    background-color: #EB5428;
+    color: white;
+}
 
 /** >>>>>>>>>>>>> - - - - - - Header Styles - - - - - - <<<<<<<<<<<<<<<< */
 @media screen and (max-width: 766px) {
@@ -117,7 +130,7 @@ Header {
     max-width: 1280px;
 }
     
-Header nav img{
+Header nav img {
     max-width: 100px;
 }
     
@@ -140,15 +153,16 @@ Header nav img{
     border: solid 2px #EB5428;
 }
 
-
-
-/* add hover styles -->*/
 #mainnav li{
-   transition: background-color 1s ease;
+   transition: background-color 1.5s ease;
 }
 
 #mainnav li:hover {
-    background-color: #d98d77;
+    background-color:#f38f70;
+}
+
+#mainnav figcaption {
+    color: #EB5428;
 }
 
 
