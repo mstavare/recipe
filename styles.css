@@ -78,6 +78,8 @@ nav {
     text-align: center;
     background-color: #F2F2F2;
     min-width: 400px;
+    position: fixed;
+    top: 0;
   }
 
   #mainnav li {
