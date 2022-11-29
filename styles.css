@@ -314,6 +314,16 @@ img.tort {
     grid-area: tort;
 }
 
+.rice, .salsa, .tort, .guac {
+    transition: background-color 1.5s ease;
+}
+
+#rice:hover, .salsa:hover, .tort:hover, .guac:hover {
+    background-color: gold;
+}
+
+
+
 /** >>>>>>>>>>>>>>> - - - - - - Footer Styles - - - - - - <<<<<<<<<<<<<<<< */
 footer {
     background-color: #ffffff;
