@@ -78,6 +78,7 @@ nav {
     text-align: center;
     background-color: #F2F2F2;
     min-width: 400px;
+    width: 100%;
     position: fixed;
     top: 0;
   }
@@ -140,7 +141,7 @@ Header nav img {
     background-color: #EB5428;
     border: 0;
     position: relative;
-    top: 8px;
+    top: 7.5px;
     left: -5px;
     padding: 0px;
 }
@@ -454,7 +455,7 @@ footer menu li figure{
     }
 
     #search input {
-        width: 280px;
+        width: 250px;
         height: 50px;
     }
 
