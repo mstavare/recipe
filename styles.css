@@ -244,82 +244,45 @@ article h3 {
 aside {
     background-color: #7ABFBF;
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 90px repeat(4, 50px 54px 24px 80px);
-    align-items: start;
-    grid-template-areas: 
-        "title title"
-        "rice A"
-        "rice B"
-        "rice C"
-        "rice D"
-        "salsa E"
-        "salsa F"
-        "salsa G"
-        "salsa H"
-        "guac I"
-        "guac J"
-        "guac K"
-        "guac L"
-        "tort M"
-        "tort N"
-        "tort O"
-        "tort P";
-}
-
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    }
+    
 aside img {
     max-width: 180px;
     padding-left: 20px;
 }
 
-aside h3, aside p, aside div { 
-    padding-left: 15px;
+#rice h3, #salsa h3, #guac h3, #tort h3 {
     margin: 0;
 }
-aside h2{
-    grid-area: title;
-    padding-bottom: 10px;
+
+#rice, #salsa, #guac, #tort {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    grid-template-rows: 38px 38px 38px 50px;
+    grid-template-areas: 
+        "img h3"
+        "img p1"
+        "img p2"
+        "img stars";
+    padding: 25px 0 20px 0;
+    margin: 0 0 10px 0;
 }
 
-h3.rice  {
-    grid-area: A;
+#rice img, #salsa img, #guac img, #tort img {
+    grid-area: img;
 }
 
-img.rice {
-    grid-area: rice;
-}
-
-h3.salsa {
-    grid-area: E;
-}
-
-img.salsa {
-    grid-area: salsa;
-}
-
-h3.guac {
-    grid-area: I;
-}
-
-img.guac {
-    grid-area: guac;
-}
-
-h3.tort {
-    grid-area: M;
-}
-
-img.tort {
-    grid-area: tort;
-}
-
-.rice, .salsa, .tort, .guac {
+  /**  aside transitions  */
+#rice, #salsa, #tort, #guac {
     transition: background-color 1.5s ease;
 }
 
-#rice:hover, .salsa:hover, .tort:hover, .guac:hover {
-    background-color: gold;
+#rice:hover, #salsa:hover, #tort:hover, #guac:hover {
+    background-color: rgb(241, 200, 38);
 }
 
 
@@ -597,37 +560,18 @@ footer menu li figure{
     /** Aside (Medium)- - - - - - - - - - - - - - - - - - - - - - */
          aside {
             display: grid;
-            grid-template-columns: 1fr 3fr 1fr 3fr;
-            grid-template-rows: 3fr 1fr 1fr 2fr 1fr 1fr 2fr ;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 60px 1fr 1fr;
             grid-template-areas: 
-                "title title title title"
-                "rice A salsa E"
-                "rice B salsa F"
-                "rice C salsa G"
-                "guac I tort M"
-                "guac J tort N"
-                "guac K tort O";
-    
-            padding-bottom: 25px;
-            row-gap: 10px;
-         }
-         p.rice.bold, div.rice {
-            grid-area: C;
-         }
-         p.salsa.bold, div.salsa {
-            grid-area: G;
-         }
-         p.guac.bold, div.guac {
-            grid-area: K;
-         }
-         p.tort.bold, div.tort {
-            grid-area: O;
+                "title title"
+                "rice salsa"
+                "guac tort";
          }
 
-         aside div {
-            position: relative;
-            left: 70px;
+         aside h2 {
+            grid-area: title;
          }
+        
 
     /** Footer (Medium) - - - - - - - - - - - - - - - - - - - - - - */
          footer {
@@ -812,38 +756,55 @@ footer menu li figure{
         aside {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 80px 256px 40px 40px 50px;
+            grid-template-rows: 80px 1fr;
             grid-template-areas: 
-                 "title title title title"
-                "rice salsa guac tort"
-                "A E I M"
-                "B F J N"
-                "C G K O";
-            padding: 0 25px 25px 50px;
-            
+                "title title title title"
+                "rice salsa guac tort";
+                column-gap: 10px;
         }
+
+        aside h2 {
+            grid-area: title;
+        }
+
+        #rice, #salsa, #guac, #tort {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            grid-template-rows: 260px 35px 35px 33px;
+            grid-template-areas: 
+                "img img"
+                "h3 h3"
+                "p p"
+                "rating stars";
+            padding: 25px 0 25px 35px;
+          }
         
+        #rice h3, #salsa h3, #guac h3, #tort h3 {
+            grid-area: h3;
+        }
+
+        #rice p.bold, #salsa p.bold, #guac p.bold, #tort p.bold {
+            grid-area: rating;
+            align-self: center;
+        }
+
+        #rice p:first-of-type, #salsa p:first-of-type, #guac p:first-of-type, #tort p:first-of-type {
+            grid-area: p;
+            align-self: center;
+        }
+
+        #rice div, #salsa div, #guac div, #tort div {
+            grid-area: stars;
+            align-self: center;
+        }
+
         aside img {
-            max-width: 256px;   
+            max-width: 256px;
+            padding: 0;   
         }  
 
-        p.rice.bold, div.rice {
-            grid-area: C;
-        }
 
-        p.salsa.bold, div.salsa {
-            grid-area: G;
-        }
-        p.guac.bold, div.guac {
-            grid-area: K;
-        }
-        p.tort.bold, div.tort {
-            grid-area: O;
-        }
-        aside div {
-            position: relative;
-            left: 70px;
-        }
+       
     
         /** Footer (LARGE) - - - - - - - - - - - - - - - - - - - - - - */
         footer {
