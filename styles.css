@@ -104,8 +104,8 @@ nav {
     background-color: #ffffff;
   }
 
-#hamburger-menu ficaption {
-    text-align: center;
+#hamburger-menu figcaption {
+    padding-left: 2px;
 }
 
 #sign-in {
