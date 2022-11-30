@@ -68,7 +68,7 @@ menu figcaption:hover, #sign-in figcaption:hover {
 
 nav {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 120px 1fr 120px;
     grid-template-rows: 2fr 1fr;
     justify-items: center;
     align-items: stretch;
@@ -101,8 +101,12 @@ nav {
 #hamburger-menu {
     grid-area: first;
     width: 100%;
-    background-color: #ffffff;   
+    background-color: #ffffff;
   }
+
+#hamburger-menu ficaption {
+    text-align: center;
+}
 
 #sign-in {
     grid-area: third;
@@ -118,10 +122,8 @@ nav {
     padding-top: 5px;
   }
 
-#hamburger-menu span {
+#hamburger-menu span figure{
     color: #EB5428;
-    padding-top: 20px;
-    padding-left: 4vw;
     text-align: center;
   }
 
@@ -645,6 +647,7 @@ footer menu li figure{
         #hamburger-menu {
             grid-area: search;
             align-self: center;
+            max-height: 110px;
         }
         
         #mainnav {
