@@ -68,6 +68,7 @@ menu h3:hover, #sign-in figcaption:hover, menu figcaption:hover{
 }
 
 /** >>>>>>>>>>>>> - - - - - - Header Styles - - - - - - <<<<<<<<<<<<<<<< */
+
 @media screen and (max-width: 766px) {
 
 nav {
@@ -184,6 +185,7 @@ span {
 }
 
 /**  >>>>>>>>>>>>> - - - - - - Street Tacos (#intro) Styles - - - - - - <<<<<<<<<<<<<<<< */
+
 main {
     background-color: #F2F2F2;
 }
@@ -218,6 +220,7 @@ h1 {
 
 
 /** >>>>>>>>>>>>>>> - - - - - - MAIN (details) Styles - - - - - - <<<<<<<<<<<<<<<< */
+
 #details {
     padding: 10px 0 20px 10px;
 }
@@ -304,7 +307,6 @@ aside p:first-of-type {
 #rice:hover, #salsa:hover, #tort:hover, #guac:hover {
     background-color: rgb(241, 200, 38);
 }
-
 
 
 /** >>>>>>>>>>>>>>> - - - - - - Footer Styles - - - - - - <<<<<<<<<<<<<<<< */
@@ -594,8 +596,7 @@ footer menu h3 {
 
          aside h2 {
             grid-area: title;
-         }
-        
+         } 
 
     /** Footer (Medium) - - - - - - - - - - - - - - - - - - - - - - */
          footer {
@@ -606,8 +607,8 @@ footer menu h3 {
                 "small empty";
             padding-top: 20px;
          }
-
 }
+
 
 /**  >>>>>>>>>>>>> - - - - Responsive Styles (LARGE) - - - - - <<<<<<<<<<<<<<<< */
 
@@ -742,8 +743,6 @@ footer menu h3 {
                 padding-top: 60px;
             }
 
-    
-    
         /** Main: details ingredients directions (LARGE)- - - - - - - - - - - - - - - - - */
          #details {
             padding-top: 20px;
