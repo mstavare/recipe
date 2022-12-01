@@ -281,7 +281,6 @@ aside img {
     grid-area: img;
 }
 
-  /**  aside transitions  */
 #rice, #salsa, #tort, #guac {
     transition: background-color 1.5s ease;
 }
