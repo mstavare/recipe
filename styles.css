@@ -10,7 +10,7 @@ Body {
     margin: auto;
 }
 
-h1, h2, h3, h4, h5, nav, a, small, label span, figcaption{
+h1, h2, h3, h4, h5, nav, a, small, label span a, figcaption{
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -44,11 +44,11 @@ h3 {
     font-size: 25px;
 }
 
-nav a, nav span, figcaption, menu li, #social li, small{
+nav a, nav span, a, figcaption, menu li, #social li h3, small{
     font-size: 20px;
 }
 
-menu figcaption {
+menu h3, span a, menu figcaption {
     color: #EB5428;
     transition: all 1s ease;
 }
@@ -58,7 +58,7 @@ menu figcaption {
     transition: all 1s ease;
 }
 
-menu figcaption:hover, #sign-in figcaption:hover {
+menu h3:hover, #sign-in figcaption:hover, menu figcaption:hover{
     background-color: #EB5428;
     color: white;
 }
@@ -174,17 +174,25 @@ Header nav img {
     color: #EB5428;
 }
 
+span a {
+    margin: 0 0 0 2px;
+}
+
+span {
+    padding-top: 20px;
+    padding-left: 25px;  
+}
 
 /**  >>>>>>>>>>>>> - - - - - - Street Tacos (#intro) Styles - - - - - - <<<<<<<<<<<<<<<< */
-article {
+main {
     background-color: #F2F2F2;
 }
 
-article img {
+main img {
     width: 100%;
 }
 
-article menu {
+main menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -204,12 +212,12 @@ h1 {
     margin: 0;
 }
 
-article p{
+main p{
     padding: 15px;
 }
 
 
-/** >>>>>>>>>>>>>>> - - - - - - ARTICLE (details) Styles - - - - - - <<<<<<<<<<<<<<<< */
+/** >>>>>>>>>>>>>>> - - - - - - MAIN (details) Styles - - - - - - <<<<<<<<<<<<<<<< */
 #details {
     padding: 10px 0 20px 10px;
 }
@@ -226,11 +234,11 @@ dt, dd {
     padding: 5px 0px 0px 0px;
 }
 
-article h3 {
+main h3 {
     text-align: center;
 } 
 
-/** >>>>>>>>>>>>>>> - - - - - - ARTICLE (ingredients & directions) Styles - - - - - - <<<<<<<<<<<<<<<< */
+/** >>>>>>>>>>>>>>> - - - - - - MAIN (ingredients & directions) Styles - - - - - - <<<<<<<<<<<<<<<< */
 #ingredients ul li{
  list-style-type: disc;
  padding-top: 5px;
@@ -329,8 +337,12 @@ footer menu {
     margin-bottom: 0;
 }
 
-footer menu li figure{
+footer menu li {
     margin: 20px;
+}
+
+footer menu h3 {
+    margin-top: 0;
 }
 
 /** >>>>>>>>>>>>> - - - - Hamburger Menu Styles - - - - - <<<<<<<<<<<<<<<< */
@@ -514,9 +526,9 @@ footer menu li figure{
         display: none;
     }
 
-    /** Article (Medium)- - - - - - - - - - - - - - - - - - - - - - */
+    /** Main (Medium)- - - - - - - - - - - - - - - - - - - - - - */
 
-    article {
+   main {
         padding-top: 140px;
     }
 
@@ -545,7 +557,7 @@ footer menu li figure{
     }
 
 
-    /** Article: details ingredients directions (Medium)- - - - - - - - - - - - - - - - - */
+    /** Main: details ingredients directions (Medium)- - - - - - - - - - - - - - - - - */
         #details dl{
             justify-items: center;
             grid-template-columns: 1fr 1fr;
@@ -684,9 +696,9 @@ footer menu li figure{
             display: none;
         } 
         
-        /** Article (LARGE)- - - - - - - - - - - - - - - - - - - - - - */
+        /** Main (LARGE)- - - - - - - - - - - - - - - - - - - - - - */
         
-            article {
+            main {
             padding-top: 105px;
         }
         
@@ -728,7 +740,7 @@ footer menu li figure{
 
     
     
-        /** Article: details ingredients directions (LARGE)- - - - - - - - - - - - - - - - - */
+        /** Main: details ingredients directions (LARGE)- - - - - - - - - - - - - - - - - */
          #details {
             padding-top: 20px;
             background-color: black;
