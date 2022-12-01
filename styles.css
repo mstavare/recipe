@@ -63,6 +63,10 @@ menu figcaption:hover, #sign-in figcaption:hover {
     color: white;
 }
 
+.printonly {
+    display: none;
+}
+
 /** >>>>>>>>>>>>> - - - - - - Header Styles - - - - - - <<<<<<<<<<<<<<<< */
 @media screen and (max-width: 766px) {
 
@@ -808,9 +812,6 @@ footer menu li figure{
             padding: 0;   
         }  
 
-
-       
-    
         /** Footer (LARGE) - - - - - - - - - - - - - - - - - - - - - - */
         footer {
             grid-template-columns: 1fr 1fr 3fr;
@@ -827,4 +828,86 @@ footer menu li figure{
         footer small {
             justify-self: start;
         }
+}
+
+
+/**  >>>>>>>>>>>>> - - - - Print Styles - - - - - <<<<<<<<<<<<<<<< */
+@media print {
+    body {
+        margin: 0 1in 0 1in;
+        background-color: white;
+        display: block;
+    }
+    h1, h2, h3, p, figcaption, li, dd, dt, small {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 0;
+        margin: 0;
+        color: black;
+    }
+
+    #intro img {
+        width: 2in;
+        filter: grayscale(1);
+        float: left;
+        margin-right: .5in;
+    }
+
+    #intro menu, aside, #search, #mainnav, #hamburgermenu, #signin, header svg, header figcaption, menu figcaption, footer img {
+        display: none;
+        height: 0;
+    }
+
+    #tacos {
+        padding-top: 0;
+        margin-top: -0.5in;
+    }
+
+    h1, h2, h3 {
+        text-align: left;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    #ingredients-directions {
+        display: flex;
+    }
+
+    h1 {
+        padding-bottom: .25in;
+        font-size: 35px;
+    }
+
+    h2, h3 {
+        font-size: 25px;
+    }
+
+    p, dd, dt, li {
+        font-size: 16px;
+    }
+
+    .printonly {
+        display: block;
+        width: 100%;
+    }
+    footer menu svg{
+        stroke: black;
+    }
+
+    small {
+        font-size: 12px;
+        padding-top: 0.25in;
+        position: absolute;
+        bottom: -5;
+    }
+
+    footer a[href]::after {
+        content: " " attr(href) " ";
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 15px;
+    }
+    footer menu {
+        padding: 0;
+        margin: 0;
+    }
 }
