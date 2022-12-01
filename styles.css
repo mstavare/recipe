@@ -115,7 +115,7 @@ nav {
 #sign-in {
     grid-area: third;
     color: #EB5428;
-    background-color: ffffff;
+    background-color: #ffffff;
     width: 100%;
     margin-top: -10px;
   }
@@ -212,7 +212,7 @@ h1 {
     margin: 0;
 }
 
-main p{
+#tacos p {
     padding: 15px;
 }
 
@@ -234,7 +234,7 @@ dt, dd {
     padding: 5px 0px 0px 0px;
 }
 
-main h3 {
+#details h3, #ingredients-directions h3 {
     text-align: center;
 } 
 
@@ -287,6 +287,10 @@ aside img {
         "img stars";
     padding: 25px 0 20px 0;
     margin: 0 0 10px 0;
+}
+
+aside p:first-of-type {
+    margin-top: 0;
 }
 
 #rice img, #salsa img, #guac img, #tort img {
@@ -850,7 +854,7 @@ footer menu h3 {
         background-color: white;
         display: block;
     }
-    h1, h2, h3, p, figcaption, li, dd, dt, small {
+    h1, h2, h3, p, figcaption, li, dd, dt, small, menu li h3 {
         font-family: Georgia, 'Times New Roman', Times, serif;
         padding: 0;
         margin: 0;
@@ -864,7 +868,7 @@ footer menu h3 {
         margin-right: .5in;
     }
 
-    #intro menu, aside, #search, #mainnav, #hamburgermenu, #signin, header svg, header figcaption, menu figcaption, footer img {
+    #intro menu, aside, #search, #mainnav, span a, #hamburger-menu, #signin, header svg, header figcaption, menu figcaption, footer img {
         display: none;
         height: 0;
     }
@@ -874,7 +878,7 @@ footer menu h3 {
         margin-top: -0.5in;
     }
 
-    h1, h2, h3 {
+    h2, h3 {
         text-align: left;
         margin: 0;
         padding-left: 0;
@@ -884,12 +888,12 @@ footer menu h3 {
         display: flex;
     }
 
-    h1 {
+    #tacos h2 {
         padding-bottom: .25in;
         font-size: 35px;
     }
 
-    h2, h3 {
+    h3, #details h2 {
         font-size: 25px;
     }
 
@@ -909,7 +913,7 @@ footer menu h3 {
         font-size: 12px;
         padding-top: 0.25in;
         position: absolute;
-        bottom: -5;
+        bottom: -0.5in;
     }
 
     footer a[href]::after {
